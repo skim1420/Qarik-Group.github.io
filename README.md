@@ -10,3 +10,6 @@ Once in a shell run now:
 ```bash
 bundle exec jekyll serve
 ```
+### Credits
+
+Using Jekyll [Sidey theme](https://github.com/ronv/sidey).
