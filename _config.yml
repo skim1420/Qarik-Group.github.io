@@ -1,5 +1,5 @@
 # theme and plugins
-theme: jekyll-theme-hacker
+theme: minima
 rss: rss
 
 kramdown:
