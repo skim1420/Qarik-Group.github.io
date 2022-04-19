@@ -1,1 +1,28 @@
+# theme and plugins
 theme: jekyll-theme-hacker
+rss: rss
+
+kramdown:
+  syntax_highlighter_opts:
+    disable: true
+    
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+titles_from_headings:
+  strip_title: true
+  collections: true
+
+defaults:
+  - scope:
+      path: ""
+      type: post
+    values:
+      tags: Other
+
+
+# socials
+title: "Qarik Blog"
+description: "Qarik Group tech blog"
+twitter_username: "qarikgroup"
