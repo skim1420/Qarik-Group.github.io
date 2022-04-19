@@ -1,20 +1,30 @@
-# theme and plugins
-theme: minima
 rss: rss
 
-kramdown:
-  syntax_highlighter_opts:
-    disable: true
-    
+title: Qarik - go further, faster.
+description: >-
+  We help companies transform and modernize their IT infrastructure to 
+  power growth and drive efficiency. Our business insight and domain 
+  knowledge reveal real-world advantage, delivering sustainable change.
+twitter_username: qarikgroup
+github_username: qarik-group
+
+theme: minima
+
+# plugins from jekyll
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
 
-titles_from_headings:
-  strip_title: true
-  collections: true
-
-# socials
-title: "Qarik Blog"
-description: "Qarik Group tech blog"
-twitter_username: "qarikgroup"
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - shell.nix
+  - README.md
+  - gemset.nix

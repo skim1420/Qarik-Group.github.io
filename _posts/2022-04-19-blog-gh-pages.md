@@ -11,3 +11,10 @@ author: patryk-kozak
 bash -c "ls -ltra"
 ```
 
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
