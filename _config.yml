@@ -1,30 +1,65 @@
-rss: rss
-
-title: Qarik - go further, faster.
+site: Qarik - Go further, faster.
+url: #yoururl
+title: Qarik - Go futher, faster.
 description: >-
   We help companies transform and modernize their IT infrastructure to 
   power growth and drive efficiency. Our business insight and domain 
   knowledge reveal real-world advantage, delivering sustainable change.
-twitter_username: qarikgroup
-github_username: qarik-group
+twitter:
+  username: #yourusername
+  card: summary
+  creator: #yourusername
+author:
+  twitter: #yourusername
+  name: #yourusername
+  avatar:
+  email: #youremail
+  url: #yoururl
+permalink: pretty
 
-theme: minima
+baseurl: ""
 
-# plugins from jekyll
-plugins:
-  - jekyll-feed
+highlighter: none
 
 exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - shell.nix
-  - README.md
-  - gemset.nix
+  - .jekyll-cache
+  
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap  
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:slug
+  
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
