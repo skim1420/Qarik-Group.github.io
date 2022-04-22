@@ -28,6 +28,9 @@ plugins:
   - jekyll-sitemap  
 
 collections:
+  authors:
+    output: true
+    title: Authors
   pages:
     output: true
     permalink: /:name
@@ -40,6 +43,11 @@ defaults:
       path: ""
     values:
       layout: "default"
+  - scope:
+      path: ""
+      type: authors
+    values:
+      layout: author
   - scope:
       path: ""
       type: "pages"

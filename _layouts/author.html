@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<section class="posts">
+  <h1>{{page.name}}</h1>
+  <p>Github account: <a href="https://github.com/{{page.github_account}}">{{page.github_account}}</a></p>
+  <h4>Posts</h4>
+  <ul>
+    {% assign filtered_posts = site.posts | where_exp:"post", "post.authors contains 'agondek'" %}
+    {% for post in filtered_posts %}
+    <li><a href ="{{ post.url }}">&middot;&nbsp;{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</section>
+
