@@ -5,21 +5,11 @@ description: >-
   We help companies transform and modernize their IT infrastructure to 
   power growth and drive efficiency. Our business insight and domain 
   knowledge reveal real-world advantage, delivering sustainable change.
-twitter:
-  username: #yourusername
-  card: summary
-  creator: #yourusername
-author:
-  twitter: #yourusername
-  name: #yourusername
-  avatar:
-  email: #youremail
-  url: #yoururl
 permalink: pretty
 
 baseurl: ""
 
-highlighter: none
+highlighter: rouge
 
 exclude:
   - .jekyll-cache
@@ -46,20 +36,21 @@ collections:
     permalink: /:year/:month/:day/:slug
   
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
     values:
       layout: "default"
-  -
-    scope:
+  - scope:
       path: ""
       type: "pages"
     values:
       layout: "page"
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
+  - scope:
+      path: "assets/imgs"
+    values:
+      image: true

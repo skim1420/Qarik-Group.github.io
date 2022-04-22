@@ -166,13 +166,17 @@ main {
 }
 
 
+.logo {
+  max-height: 5rem;
+  float: right;
+  padding-bottom: 0.5rem;
+  padding-right: 1.5rem;
+}
+
 @media screen and (max-width: 45rem ) {
 header li {
     display: inline;
 	margin-right: 1rem;
-}
-.logo {
-	padding-bottom: 1rem;
 }
 header ul {
 	border-bottom: 1px solid #edf2f7;
