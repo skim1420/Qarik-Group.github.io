@@ -10,7 +10,7 @@ layout: default
     {% if c_author %}
     <a href="/authors/{{c_author.short_name}}">{{c_author.name}}</a>{% unless forloop.last %}, {% endunless %}
     {% endif %}
-    {% endfor %} &middot;
+    {% endfor %}
   </span>
   <span class="post-date">
     <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
@@ -20,7 +20,7 @@ layout: default
     Tags: &nbsp;
     {% for tag in page.tags %}
     <a href="/tag/{{tag}}">{{tag}}</a>{% unless forloop.last %}, {% endunless %}
-    {% endfor %} &middot;
+    {% endfor %}
   </span>
 </section>
 

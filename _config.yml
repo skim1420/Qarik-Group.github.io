@@ -9,7 +9,13 @@ permalink: pretty
 
 baseurl: ""
 
+markdown: kramdown
 highlighter: rouge
+
+# md processor
+kramdown:
+  syntax_highlighter: rouge
+  input: GFM
 
 exclude:
   - .jekyll-cache

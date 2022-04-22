@@ -6,6 +6,8 @@
 	padding:0;
 }
 
+@import "_rouge.scss";
+
 @font-face {
   font-family: 'RedHatMonoRegular';
   src: url('/assets/RedHatMono-Regular.ttf') format('truetype');
@@ -62,7 +64,7 @@ code,pre {
 }
 
 code {
-	padding: .1rem;
+	padding: 0;
 }
 
 pre code {
